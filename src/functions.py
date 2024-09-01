@@ -53,7 +53,8 @@ class DrawText(customtkinter.CTkLabel):
             master,
             font = font,
             text = text,
-            fg_color = fg_color,
+            fg_color = '#e50000',
+            text_color = fg_color,
             justify = 'center'
         )
 

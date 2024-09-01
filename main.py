@@ -17,6 +17,8 @@ class App(customtkinter.CTk):
         self.DrawBackground()
         self.DrawTitle()
 
+        print(int(app_width * 0.9))
+
     def app_bg_image(self):
         img_path = '.\\pygtavmenu\\img\\background.png'
         width = app_width
@@ -26,11 +28,11 @@ class App(customtkinter.CTk):
         self.app_bg_image.grid(row = 0, column = 0)
 
     def AddTitle(self):
-        text = "Modloader Xzhyan"
+        text = "Modloader"
         font_style = 'Impact'
         font_size = 24
         font = f'{font_style}', font_size
-        fg_color = 'transparent'
+        fg_color = '#ffffff'
         titleYCoord = int(app_height * 0.5346) - self.safeZoneSizeY
         # Diferença entre o tamanho do rect do DrawTitle.
         width = int(app_width * 0.2250)
