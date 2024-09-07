@@ -16,8 +16,7 @@ class App(customtkinter.CTk):
 
         self.DrawBackground()
         self.DrawTitle()
-
-        print(int(app_width * 0.9))
+        self.DrawLateralScrollbar()
 
     def app_bg_image(self):
         img_path = '.\\pygtavmenu\\img\\background.png'
@@ -26,6 +25,33 @@ class App(customtkinter.CTk):
         self.app_background = DrawImage(img_path, width, height)
         self.app_bg_image = customtkinter.CTkLabel(self, image = self.app_background, text = '')
         self.app_bg_image.grid(row = 0, column = 0)
+
+    def DrawLateralScrollbar(self):
+        width = int(app_width * 0.0090)
+        height = int(app_height * 0.035)
+        fg_color = '#007cff'
+        img_path = ''
+
+        if numberOfOptions > 13:
+            optionCount = 13.0 # no menu base ()
+        else:
+            optionCount = numberOfOptions
+
+        backgroundLenght = optionCount * height
+        height = backgroundLenght
+        backgroundYCoord = (optionCount * int(app_height * 0.035) / int(app_height * 2.0)) + (int(app_height * 0.6046) - self.safeZoneSizeY)
+
+        # Quando o menu esta na esquerda eu apenas preciso dar o espaço '64' referente a 90% da tela.
+        # 1280x720 em 90% fica 1152x648 que é a zona segura.
+        # centralizando o '1152x648 zona segura' ficam margens de 64 p/ 36.
+        # Se o menu estiver na direta, ele tira a diferença do seu tamanho 'width'.
+        if leftSided == 1:
+            setLateralXCoord3 = self.MenuXCoord3 - 64
+        else:
+            setLateralXCoord3 = self.MenuXCoord3 - width + 64
+
+        self.draw_lateral_scrollbar = DrawRect(self, width, height, fg_color, img_path, setLateralXCoord3, backgroundYCoord)
+        self.draw_lateral_scrollbar.place(x = setLateralXCoord3 + int(app_width * 0.02), y = backgroundYCoord)
 
     def AddTitle(self):
         text = "Modloader"
