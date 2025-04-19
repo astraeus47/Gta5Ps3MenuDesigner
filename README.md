@@ -1,21 +1,63 @@
-# GTAV PS3 Menu Designer
+# 🎮 Gta5Ps3MenuDesigner
 
-![GTAV PS3 Menu Designer](img/menu.png)
+Uma interface gráfica desenvolvida em Python com a biblioteca [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter), que simula a tela do GTA V no PlayStation 3. O objetivo principal deste projeto é auxiliar no desenvolvimento e design de **mod menus** para o jogo, permitindo que desenvolvedores visualizem, ajustem e planejem seus layouts com mais precisão.
 
-## Descrição
+---
 
-O **GTAV PS3 Menu Designer** é uma ferramenta desenvolvida em Python que simula a interface do GTA V para PS3. Esta ferramenta é projetada para auxiliar na criação e design de Mod Menus, facilitando o processo de desenvolvimento e testes.
+## 📌 Sobre o Projeto
 
-## Versão
+O **Gta5Ps3MenuDesigner** foi criado para resolver uma dificuldade comum no desenvolvimento de mod menus para GTA V no PS3: alinhar elementos da interface de forma que fiquem exatamente como aparecem no jogo. 
 
-**1.0.3**
+Com esse projeto, foi possível:
 
-## Tecnologias Utilizadas
+- Simular a resolução e estrutura da tela do GTA V no PS3;
+- Posicionar elementos visuais como botões, menus e caixas de texto no lugar exato onde apareceriam no jogo;
+- Exportar essas informações para serem usadas no código-fonte de mod menus;
+- Criar mockups visuais antes de codificar diretamente no ambiente do mod menu.
 
-Este projeto foi desenvolvido utilizando a biblioteca [CustomTkinter](https://customtkinter.tomschimansky.com/), uma versão personalizada do Tkinter que permite criar interfaces de usuário mais modernas e atraentes.
+Tudo isso com uma interface intuitiva, baseada em **CustomTkinter** e com suporte a imagens via **Pillow**.
 
-## Funcionalidade
+---
 
-A ideia principal do GTAV PS3 Menu Designer é permitir que os usuários criem e ajustem elementos de design para seus Mod Menus sem a necessidade de testes constantes dentro do jogo. Por exemplo, se o usuário deseja criar um novo retângulo (RECT) para seu menu, ele pode utilizar a função `DRAW_RECT`, que simula a criação de elementos no Mod Menu.
+## 🛠️ Tecnologias Utilizadas
 
-Os usuários podem trabalhar com coordenadas e tamanhos de forma intuitiva, tornando o processo de design mais eficiente. Quando estiverem satisfeitos com o design, eles podem facilmente transferir os valores ajustados para a base do Mod Menu do jogo.
+- [Python](https://www.python.org/)
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+- [Pillow (PIL)](https://python-pillow.org/)
+
+---
+
+## ⚠️ Aviso
+
+> Este é um **projeto antigo e descontinuado**.  
+>  
+> Ele permanece no GitHub **apenas para fins educacionais**, para que outros desenvolvedores possam estudar, se inspirar ou até aplicar ideias semelhantes em outros contextos.  
+>  
+> Não há planos para atualizações futuras.
+
+---
+
+## 📷 Capturas de Tela (opcional)
+
+Você pode adicionar aqui algumas imagens da interface do projeto, se tiver, para ilustrar melhor como era a simulação.
+
+---
+
+## 🤝 Contribuição
+
+Apesar de ser um projeto descontinuado, sinta-se à vontade para abrir *Issues* ou *Forkar* o repositório se quiser explorar ou adaptar o conceito para outros jogos ou plataformas.
+
+---
+
+## 📄 Licença
+
+Este projeto é de código aberto e pode ser utilizado **livremente para fins de estudo**.
+
+> **Não é permitido o uso comercial sem autorização prévia.**  
+> Para usos além de fins educacionais, entre em contato com o autor.
+
+---
+
+## ✍️ Autor
+
+Desenvolvido por **Astraeus**.

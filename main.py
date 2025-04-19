@@ -19,7 +19,7 @@ class App(customtkinter.CTk):
         self.DrawLateralScrollbar()
 
     def app_bg_image(self):
-        img_path = '.\\pygtavmenu\\img\\background.png'
+        img_path = 'img/background.png'
         width = app_width
         height = app_height
         self.app_background = DrawImage(img_path, width, height)
@@ -93,7 +93,7 @@ class App(customtkinter.CTk):
         width = int(app_width * 0.2250)
         height = int(app_height * 0.035)
         fg_color = '#323232'
-        img_path = '.\\pygtavmenu\\img\\bg.png'
+        img_path = 'img/bg.png'
 
         if numberOfOptions > 13:
             optionCount = 13.0 # no menu base ()
