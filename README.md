@@ -63,4 +63,4 @@ Este projeto é de código aberto e pode ser utilizado **livremente para fins de
 Desenvolvido por **Astraeus**.
 
 ---
- ![menu](img/menu.png.PNG)
+ ![menu](img/menu.png)
