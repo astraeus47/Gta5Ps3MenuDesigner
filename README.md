@@ -37,12 +37,6 @@ Tudo isso com uma interface intuitiva, baseada em **CustomTkinter** e com suport
 
 ---
 
-## 📷 Capturas de Tela (opcional)
-
-Você pode adicionar aqui algumas imagens da interface do projeto, se tiver, para ilustrar melhor como era a simulação.
-
----
-
 ## 🤝 Contribuição
 
 Apesar de ser um projeto descontinuado, sinta-se à vontade para abrir *Issues* ou *Forkar* o repositório se quiser explorar ou adaptar o conceito para outros jogos ou plataformas.
